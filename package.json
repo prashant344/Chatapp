@@ -1,0 +1,35 @@
+{
+  "name": "mychatapp",
+  "version": "1.0.0",
+  "description": "chatting application",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "\"Node\""
+  ],
+  "author": "\"Prashant\",",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "consolidate": "^0.15.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.1.5",
+    "nock": "^9.3.3",
+    "path": "^0.12.7",
+    "pg": "^7.4.3",
+    "promise": "^8.0.1",
+    "should": "^13.2.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "supertest": "^3.1.0"
+  }
+}
