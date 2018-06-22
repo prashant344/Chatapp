@@ -16,3 +16,6 @@ Currently the time limit set for the self destruction of message is 30 seconds, 
 2) Postgresql for DB storage
 3) Web socket
 4) Mocha,Chai, Nock and socket.io-client js for testing 
+
+#Access the application using the below URL:
+https://agent-chatapp.herokuapp.com/
