@@ -9,6 +9,8 @@ var path    = require("path");
 var fs = require('fs');
 var config = require('./config.js');
 
+var port = process.env.PORT || 3002;
+
 app.set('views',__dirname + '/public');
 
 const pool = new Pool(config.pool);
@@ -109,4 +111,4 @@ io.on('connection',function(client){
   })
 });
 
-server.listen(config.port);
+server.listen(port);

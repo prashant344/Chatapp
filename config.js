@@ -6,6 +6,5 @@ module.exports = {
         password: 'admin',
         port: 5432,
       },
-      messageValidityInSeconds :"30000",
-      port:"3002"
+      messageValidityInSeconds :"30000"
 }
