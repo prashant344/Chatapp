@@ -1,7 +1,7 @@
 var url = window.location.href;
 var arr = url.split("/");
 var domain = arr[0] + "//" + arr[2];
-var socket= io.connect(domain+':5432');
+var socket= io.connect(domain);
 
 socket.on('connect',function(data){
     socket.emit('join','hello from client');
