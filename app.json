@@ -1,0 +1,6 @@
+{
+    "name":"agent-chatapp",
+    "description":"a chatting application with self descructing message feature",
+    "repository":"https://github.com/prashant344/chatapp/",
+    "keywords":["node","express","socket.io","mocha","nock"]
+}
