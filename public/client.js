@@ -1,4 +1,7 @@
-var socket= io.connect('http://localhost:3002');
+var url = window.location.href;
+var arr = url.split("/");
+var domain = arr[0] + "//" + arr[2];
+var socket= io.connect(domain+':'+process.env.PORT);
 
 socket.on('connect',function(data){
     socket.emit('join','hello from client');
