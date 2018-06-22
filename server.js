@@ -13,7 +13,11 @@ var port = process.env.PORT || 3002;
 
 app.set('views',__dirname + '/public');
 
-const pool = new Pool(config.pool);
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: true
+});
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());  
