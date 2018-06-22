@@ -1,10 +1,11 @@
 {
-  "name": "mychatapp",
+  "name": "agent-chatapp",
   "version": "1.0.0",
   "description": "chatting application",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/**/*.js"
+    "test": "./node_modules/mocha/bin/mocha test/**/*.js",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
