@@ -46,7 +46,7 @@ app.get('/getMessages',(request,response)=>{
 
 app.post('/login',function(req,res){
   const username=req.body.username;
-  const text = 'INSERT INTO user(name) VALUES($1) RETURNING *'
+  const text = 'INSERT INTO public.user(name) VALUES($1) RETURNING *'
   const values = [username];
   pool.query(text, values)
   .then(result => {
